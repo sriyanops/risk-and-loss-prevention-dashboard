@@ -1,0 +1,13 @@
+site_id,site_type,capacity_units,operating_days_per_week,is_structurally_high_loss
+S001,facility,5443,7,False
+S002,service_site,5544,6,False
+S003,warehouse,5369,6,False
+S004,warehouse,5644,7,True
+S005,warehouse,4552,6,False
+S006,service_site,3012,6,False
+S007,facility,5858,6,False
+S008,service_site,4301,5,False
+S009,facility,4501,5,True
+S010,facility,3983,6,True
+S011,warehouse,3230,7,False
+S012,service_site,6207,5,False
