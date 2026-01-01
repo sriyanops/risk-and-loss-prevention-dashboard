@@ -94,7 +94,7 @@ site_resource_ops_tool/
 ```
 
 ## How to Run
-> Run the application from the repository root.
+> All commands should be run from repository root.
 
 
 ### Install dependencies
@@ -115,7 +115,6 @@ reports/site_resource_ops_report.pdf
 
 ## Launch interactive dashboard
 
-> Run from the repository root.
 
 **macOS / Linux** - 
 ```PYTHONPATH=. streamlit run src/app.py``` 
