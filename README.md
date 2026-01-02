@@ -104,7 +104,6 @@ All required Python dependencies are listed in [`requirements.txt`](requirements
 
 ```
 python -m pip install -r requirements.txt
-
 ```
 ### Generate executive PDF report
 
