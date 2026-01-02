@@ -94,7 +94,8 @@ site_resource_ops_tool/
 ```
 
 ## How to Run
-> All commands should be run from repository root.
+> Note: All commands should be run from repository root. This project uses a `src/`-based layout. Some environments require the repository root to be added to `PYTHONPATH`.
+
 
 
 ### Install dependencies
@@ -102,12 +103,15 @@ site_resource_ops_tool/
 All required Python dependencies are listed in [`requirements.txt`](requirements.txt).
 
 ```
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
+
 ```
 ### Generate executive PDF report
-```
-python -m src.main
-```
+
+**macOS/Linux** - ```PYTHONPATH="$(pwd)" python -m src.main```
+
+**Windows** - ```python -m src.main```
+
 
 ## Output:
 
@@ -117,13 +121,9 @@ reports/site_resource_ops_report.pdf
 
 
 **macOS / Linux** - 
-```PYTHONPATH=. streamlit run src/app.py``` 
+```PYTHONPATH="$(pwd)" python3 -m streamlit run src/app.py``` 
 
-**Windows** - 
-```
-$env:PYTHONPATH="."
-streamlit run src/app.py 
-```
+**Windows** - ```$env:PYTHONPATH="."streamlit run src/app.py ```
 > By default, the dashboard uses the sample dataset in data/sample/.
 To run against local development data, set OPS_DATA_DIR=raw.
 
